@@ -1,33 +1,56 @@
-h3 { 
-    color: red; /*цвет текста*/
-}
-h1 {
-    text-align: center; /*выравнивание текста*/
-    color: green; /*цвет текста*/
-    font-size: 50px; /*размер шрифта*/
-    font-weight: normal; /*жирность шрифта*/
-}
 
-td {
-    text-align: center; /*выравнивание текста*/
-    width: 100px; /*ширина*/
-    height: 300px; /*высота*/
-    font-weight: bold; /*жирность шрифта*/
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1380px; 
+    padding: 55px 103px 0 103px; /* отступы: сверху, по бокам */
+    background-color: 
+  }
+  
+  /* Логотип + текст */
+  .group1 {
+    display: flex;
+    align-items: center;
+
+  }
+.logo{
+width: 38px;
+height: 38px;
 }
-th{
-    text-align: left; /*выравнивание текста*/
-    font-weight: normal; /*жирность шрифта*/
+.text_block{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 15px;
 }
-p {
-   font: 700 32px/48px Georgia, serif;
-   color: #333;
-   margin-bottom: 20px;
+.header_title{
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
 }
-h2 {
-    font-weight: normal; /*жирность шрифта*/
-    width: 300px; /*ширина*/
-    text-align: center; /*выравнивание текста*/
-    color: blue   ; /*цвет текста*/
-    font-size: 40px; /*размер шрифта*/
-    font-family: Verdana; /*шрифт*/
+.header_text{
+font-size: 16px;
+font-weight: 400;
+margin: 0;
+}
+/*логотип + текст корзина*/
+.cart_button{
+    display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fe5f1e;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.divider{
+    width: 1px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.25);
 }
