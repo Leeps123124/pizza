@@ -6,8 +6,7 @@
     width: 1380px; 
     padding: 55px 103px 0 103px; /* отступы: сверху, по бокам */
     background-color: 
-  }
-  
+}
   /* Логотип + текст */
   .group1 {
     display: flex;
@@ -37,7 +36,7 @@ margin: 0;
 }
 /*логотип + текст корзина*/
 .cart_button{
-    display: flex;
+  display: flex;
   align-items: center;
   gap: 10px;
   background-color: #fe5f1e;
@@ -49,8 +48,276 @@ margin: 0;
   font-weight: 600;
   cursor: pointer;
 }
+.top-panel-right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.cart-and-sort {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 25px;
+}
 .divider{
     width: 1px;
     height: 24px;
     background: rgba(255, 255, 255, 0.25);
+}
+
+/* списки выбора + пиццы */
+/* Блок категорий и сортировки */
+.top-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 0 0;                  /* убираем внутренние отступы */
+  width: 1225px;                 /* ограничиваем по макету */
+  margin-left: 93px;             /* отступ слева (из макета) */
+  margin-right: 22px;            /* прижимает блок к левому краю и позволяет правому краю быть «свободным» */
+  height: 67px;
+  box-sizing: border-box;
+}
+
+/* Кнопки категорий */
+.categories {
+  display: flex;
+  gap: 10px;
+}
+
+.category {
+  padding: 10px 25px;
+  background: #f3f3f3;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.category:hover {
+  background: #e6e6e6;
+}
+
+.category.active {
+  background: #282828;
+  color: white;
+}
+
+/* Сортировка */
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-label {
+  color: #b6b6b6;
+  font-size: 14px;
+}
+.section-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 35px 0 30px 105px; /* верхний и нижний отступ + слева 105px */
+  line-height: 39px;
+}
+
+.sort-value {
+  background: none;
+  border: none;
+  color: #fe5f1e;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+/*пиццы фото*/
+.pizza-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 35px;
+  padding: 30px 105px;
+  margin-top: 30px;
+  
+}
+
+.pizza-card {
+  width: 280px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.pizza-img {
+  width: 260px;
+  height: 260px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.pizza-title {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.pizza-options {
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.type-selector,
+.size-selector {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.type-selector button,
+.size-selector button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.type-selector .active,
+.size-selector .active {
+  background: white;
+  box-shadow: 0 0 0 1px #fe5f1e;
+  font-weight: bold;
+}
+
+.pizza-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.pizza-price {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.add-button {
+  background: #fe5f1e;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-button:hover {
+  background: #d94c0c;
+}
+
+
+.cart-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 40px;
+  font-family: Arial, sans-serif;
+}
+.cart-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.back-button {
+  padding: 10px 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #333;
+}
+.pay-button {
+  padding: 10px 20px;
+  background: #fe5f1e;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+a{
+  text-decoration: none;
+}
+.empty-cart {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.empty-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.empty-subtext {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.empty-img {
+  width: 300px;
+  margin: 50px 0;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #282828;
+  color: white;
+  padding: 12px 0px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.back-button:hover {
+  background-color: #444;
 }

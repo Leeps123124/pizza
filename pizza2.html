@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Корзина | React Pizza</title>
+  <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="group1">
+        <img src="logo.png" alt="PIZZA" class="logo" />
+        <div class="text_block">
+          <h1 class="header_title">REACT PIZZA</h1>
+          <p class="header_text">cамая вкусная пицца во вселенной</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Корзина -->
+  <main class="cart-container">
+    <h2 class="cart-title">🛒 Корзина</h2>
+
+    <div class="cart-item">
+      <img src="cheezechicken.png" alt="Сырный цыплёнок" class="pizza-img" />
+      <div>
+        <h3 class="pizza-title">Сырный цыплёнок</h3>
+        <p>тонкое тесто, 26 см.</p>
+      </div>
+      <div class="cart-controls">
+        <button>-</button>
+        <span>2</span>
+        <button>+</button>
+      </div>
+      <strong>770 ₽</strong>
+      <button>✖</button>
+    </div>
+    <div class="cart-item">
+        <img src="asiakrevetka.png" alt="Сырный цыплёнок" class="pizza-img" />
+        <div>
+          <h3 class="pizza-title">Креветки по-азиатски</h3>
+          <p>тонкое тесто, 26 см.</p>
+        </div>
+        <div class="cart-controls">
+          <button>-</button>
+          <span>1</span>
+          <button>+</button>
+        </div>
+        <strong>290 ₽</strong>
+        <button>✖</button>
+      </div>
+      <div class="cart-item">
+        <img src="burgerpizza.png" alt="Сырный цыплёнок" class="pizza-img" />
+        <div>
+          <h3 class="pizza-title">Чизбургер-пицца</h3>
+          <p>тонкое тесто, 26 см.</p>
+        </div>
+        <div class="cart-controls">
+          <button>-</button>
+          <span>3</span>
+          <button>+</button>
+        </div>
+        <strong>350 ₽</strong>
+        <button>✖</button>
+      </div>
+
+    <!-- Повторяй cart-item для других пицц -->
+
+    <div class="cart-summary">
+      <p>Всего пицц: <strong>3 шт.</strong></p>
+      <p>Сумма заказа: <strong style="color: #fe5f1e;">900 ₽</strong></p>
+    </div>
+
+    <div class="cart-actions">
+      <a href="pizza.html" class="back-button">← Вернуться назад</a>
+      <a href="pizza3.html" class="pay-button">Оплатить сейчас</a>
+    
+    </div>
+    
+  </main>
+
+</body>
+</html>
